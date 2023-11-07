@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-    <button id="googleButton">Google</button>
-    <button id="w3Button">W3 Schools</button>
-    <button id="imagesButton">Images</button>
-</main>
-<script>
-    const googleButton = document.getElementById("googleButton")
-    const w3Button = document.getElementById("w3Button")
-    const imagesButton = document.getElementById("imagesButton")  
-    
-    function openGoogle() {
+      <button id="googleButton">Google</button>
+      <button id="w3Button">W3 Schools</button>
+      <button id="imagesButton">Images</button>
+    </main>
+    <script>
+      const googleButton = document.getElementById("googleButton");
+      const w3Button = document.getElementById("w3Button");
+      const imagesButton = document.getElementById("imagesButton");
+
+      function openGoogle() {
         window.open("https://www.google.com/");
       }
       function openw3Schools() {
-        window.open("https://www.w3schools.com/");
+        window.open("https://www.w3schools.com/js/");
       }
       function openImages() {
         window.open("images.html");
       }
 
       googleButton.onclick = openGoogle;
-      w3Button.onclick = openw3Schools
-      imagesButton.onclick = openImages
-</script>
-</body>
+      w3Button.onclick = openw3Schools;
+      imagesButton.onclick = openImages;
+    </script>
+  </body>
 </html>
