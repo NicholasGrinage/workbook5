@@ -18,14 +18,18 @@ const winningTicketsTableBody = document.querySelector("#winningTicketsTableBody
 // write functions
 function loadWinningTicketsTable() {
   for (const winningTicket of winningTickets) {
-    let row = winningTicketsTableBody.insertRow(-1);
-    let cell1 = row.insertCell(0);
-    cell1.innerText = winningTicket.tixNum;
-    let cell2 = row.insertCell(1);
-    cell2.innerText = winningTicket.prize.toLocaleString();
-    let cell3 = row.insertCell(2);
-    cell3.innerText = winningTicket.expires;
+    buildTicketRow(winningTicket);
   }
+}
+
+function buildTicketRow(winningTicket) {
+  let row = winningTicketsTableBody.insertRow(-1);
+  let cell1 = row.insertCell(0);
+  cell1.innerText = winningTicket.tixNum;
+  let cell2 = row.insertCell(1);
+  cell2.innerText = winningTicket.prize.toLocaleString();
+  let cell3 = row.insertCell(2);
+  cell3.innerText = winningTicket.expires;
 }
 
 // wire-up functions to events

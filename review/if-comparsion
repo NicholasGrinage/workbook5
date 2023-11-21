@@ -1,0 +1,8 @@
+let message = "fail"
+if (message == "fail") {
+    console.log("failed");
+}
+message = "pass"
+if (message != "fail") {
+    console.log("succeeded");
+}
